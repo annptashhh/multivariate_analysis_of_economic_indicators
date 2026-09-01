@@ -105,7 +105,7 @@ n_clusters_list = [7]
 for n_clusters in n_clusters_list:
     ward_clustering(n_clusters)
 ```
-По [`методу Уорда`](multivariate_analysis/images/wards%20clustering.png) при пороговом значении ρ = 10.45 все регионы РФ разбиваются на **5 кластеров**. 
+По [`методу Уорда`](multivariate_analysis/images/Ward%20PCA.png) при пороговом значении ρ = 10.45 все регионы РФ разбиваются на **5 кластеров**. 
 
 #### 2.2. Метод K-средних
 ```python
@@ -127,7 +127,7 @@ for cluster_num in range(1, 8):
     print(f"\nКластер {cluster_num} ({len(cluster_regions)} регионов):")
     print(", ".join(cluster_regions))
 ```
-[`Методом К-средних`](multivariate_analysis/images/K-means%20clustering.png)** все субъекты РФ разбиваются на **7 кластеров**.
+[`Методом К-средних`](multivariate_analysis/images/K-means%20PCA.png)** все субъекты РФ разбиваются на **7 кластеров**.
 
 ### 3. Регрессионный анализ (OLS)
 **Результаты** построения модели при использовании регрессионного анализа:
